@@ -157,13 +157,19 @@ export default function DevelopmentPage() {
             </button>
           </div>
 
-          <div className="mt-5 grid grid-cols-2 gap-3">
+          <div className="mt-5 grid place-items-center grid-cols-2 gap-3">
             {memories.map(({ id, emoji }) => (
               <div
                 key={id}
-                className="flex h-28 items-center justify-center rounded-3xl bg-linear-to-br from-rose-50 to-amber-50 text-4xl shadow-inner ring-1 ring-slate-100"
+                className="flex select-none items-center flex-col justify-center bg-linear-to-br from-rose-50 to-amber-50 text-4xl shadow-inner ring-1 ring-slate-100"
               >
-                {emoji}
+                <p className="size-48 mt-4 mx-4 mb-4 flex items-center justify-center bg-black">{emoji}</p>
+                <p
+                  className=" flex items-center justify-center text-sm mb-4 text-black font-serif
+                "
+                >
+                  {id}
+                </p>
               </div>
             ))}
           </div>
