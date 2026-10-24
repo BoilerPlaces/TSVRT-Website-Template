@@ -1,10 +1,11 @@
 {
   "license": "MIT",
   "author": "Alask-Code",
-  "name": "alask.code",
-  "version": "1.0.1",
+  "name": "vite-react-boilerplate",
+  "version": "1.0.0",
   "scripts": {
-    "start": "vite --host",
+    "start": "vite",
+    "start:host": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext ts,tsx",
     "typecheck": "tsc --noEmit"
