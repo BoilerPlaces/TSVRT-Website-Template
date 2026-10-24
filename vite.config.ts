@@ -9,7 +9,7 @@ const outDir = join(root, 'dist');
 
 export default defineConfig(({ command }) => ({
   root,
-  base: command === 'build' ? '/my-little-baby/' : '/',
+  base: command === 'build' ? '/TSVRT-Website-Template/' : '/',
   plugins: [
     react(),
     {
